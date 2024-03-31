@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="header">
+            <h1 id="title">
+              Climate Change Survey
+            </h1>
+            <p id="description"> People awareness regarding climate change survey...
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+            <!-- Text section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+            </div>
+            <!-- end of text section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+            </div>
+            <!-- end of number section-->
+             
+            <!-- Type number section-->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" class="formControl" placeholder="Enter your Age" required>
+            </div>
+            <!-- end of number section-->
+
+            <!-- Type Number section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue">(optional)</span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- Type-->
+
+            <!-- select section -->
+            <div class="form-group">
+                <label for="quest">Gender</label>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value disabled selected >Select your Gender</option>
+                    <option value="student">Male</option>
+                    <option value="teacher">Female</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">1. How concerned are you about the increasing global temperatures and its impact on ecosystems?</p>
+                <label for="">
+                    <input type="radio" name="source" value="yes"
+                    class="inputRadio"
+                    >Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+                
+            <!-- radio button section -->
+             <div class="form-group">
+                <p id="quest">2. Are you aware of the rising sea levels and coastal erosion caused by climate change?</p>
+                <label for="">
+                    <input type="radio" name="source1" value="yes"
+                    class="inputRadio"
+                    >Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source1" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+
+            <!-- radio button section -->
+             <div class="form-group">
+                <p id="quest">3. Have you personally experienced or been affected by extreme weather events such as hurricanes and wildfires?</p>
+                <label for="">
+                    <input type="radio" name="source2" value="yes"
+                    class="inputRadio"
+                    >yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source2" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+
+            <!-- radio button section -->
+             <div class="form-group">
+                <p id="quest">4. Do you understand the importance of biodiversity and the consequences of its loss due to climate change?</p>
+                <label for="">
+                    <input type="radio" name="source3" value="yes"
+                    class="inputRadio"
+                    >Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source3" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+
+            <!-- radio button section -->
+              <div class="form-group">
+                <p id="quest">5. Are you familiar with the melting ice caps and glaciers and the implications it has on the environment?</p>
+                <label for="">
+                    <input type="radio" name="source4" value="yes"
+                    class="inputRadio"
+                    >Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source4" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+
+            <!-- radio button section -->
+              <div class="form-group">
+                <p id="quest">6. To what extent do you believe human activities contribute to climate change?</p>
+                <label for="">
+                    <input type="radio" name="source5" value="yes"
+                    class="inputRadio"
+                    >Yes
+                </label>
+                <label for="">
+                    <input type="radio" name="source5" value="no"
+                    class="inputRadio"
+                    >No
+                </label>
+            <!-- end of radio button -->
+
+
+
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
